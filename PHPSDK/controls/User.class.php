@@ -22,10 +22,6 @@ class User extends Common{
 		$arr = array("group"=>array("name"=>$name));
 		$data = json_encode($arr);
         $res = $this->http_curl($url,true,true,$data);
-        if(isset($res->errcode)){
-        	echo $res->errmsg;
-			return false;
-        }
         return $res;
 	}
 
@@ -34,10 +30,6 @@ class User extends Common{
 		$access_token = $this->getAccessToken();
 		$url="https://api.weixin.qq.com/cgi-bin/groups/get?access_token={$access_token}";
 		$res = http_curl($url);
-		if(isset($res->errcode)){
-			echo $res->errmsg;
-			return false;
-		}
 		return $res;
 	}
 	
@@ -48,10 +40,6 @@ class User extends Common{
 		$arr = array("group"=>array("id"=>$id));
 		$data = json_encode($arr);
         $res = http_curl($url,true,true,$data);
-        if($res->errcode){
-        	echo $res->errmsg;
-			return false;
-        }
         return $res;
 	}
 	
@@ -62,10 +50,6 @@ class User extends Common{
 		$arr = array("group"=>array("id"=>$id,"name"=>$name));
 		$data = json_encode($arr);
 		$res = $this->http_curl($url,true,true,$data);
-		if($res->errcode){
-			echo $res->errmsg;
-			return false;
-		}
 		return $res;
 	}
 	
@@ -76,10 +60,6 @@ class User extends Common{
 		$arr = array("group"=>array("openid"=>$openid));
 		$data = json_encode($arr);
 		$res = $this->http_curl($url,true,true,$data);
-		if($res->errcode){
-			echo $res->errmsg;
-			return false;
-		}
 		return $res;
 	}
 	
@@ -90,10 +70,6 @@ class User extends Common{
 		$arr = array("group"=>array("openid"=>$openid));
 		$data = json_encode($arr);
 		$res = $this->http_curl($url,true,true,$data);
-		if($res->errcode){
-			echo $res->errmsg;
-			return false;
-		}
 		return $res;
 	}
 	
@@ -107,10 +83,6 @@ class User extends Common{
 		}		
 		$data = json_encode($arr);
 		$res = $this->http_curl($url,true,true,$data);
-		if($res->errcode){
-			echo $res->errmsg;
-			return false;
-		}
 		return $res;
 	}
 	
@@ -121,10 +93,6 @@ class User extends Common{
 		$arr = array("openid"=>$openid,"remark"=>$remark);
 		$data = json_encode($arr);
 		$res = $this->http_curl($url,true,true,$data);
-		if(isset($res->errcode)){
-			echo $res->errmsg;
-			return false;
-		}
 		return $res;
 	}
     
@@ -133,10 +101,6 @@ class User extends Common{
 		$access_token = $this->getAccessToken();
 		$url="https://api.weixin.qq.com/cgi-bin/user/info?access_token={$access_token}&openid={$openid}&lang={$lang}";
 		$res = $this->http_curl($url,true);
-		if(isset($res->errcode)){
-			echo $res->errmsg;
-			return false;
-		}
 		return $res;
 	}
 	
@@ -151,10 +115,6 @@ class User extends Common{
 		}
 		$data = json_encode($arr);
 		$res = $this->http_curl($url,true,true,$data);
-		if(isset($res->errcode)){
-			echo $res->errmsg;
-			return false;
-		}
 		return $res;
 	}
 	
@@ -165,10 +125,6 @@ class User extends Common{
 		$res = $this->http_curl($url,true);
 		print_r($res);
 		exit;
-		if(isset($res->errcode)){
-			echo $res->errmsg;
-			return false;
-		}
 		return $res;
 	}
 	
@@ -193,10 +149,6 @@ class User extends Common{
 		//2 第二步：通过code换取openid
 		$url = "https://api.weixin.qq.com/sns/oauth2/access_token?appid={$this->appid}&secret={$this->appsecret}&code={$_GET['code']}&grant_type=authorization_code";
 		$res = $this->http_curl($url,true);		
-		if(isset($res->errcode)){
-			print_r($res);
-			return false;
-		}
 		return $res->openid;
 		
 	}
@@ -206,26 +158,14 @@ class User extends Common{
 		//2 第二步：通过code换取网页授权access_token
 		$url = "https://api.weixin.qq.com/sns/oauth2/access_token?appid={$this->appid}&secret={$this->appsecret}&code={$_GET['code']}&grant_type=authorization_code";
 		$res = $this->http_curl($url,true);
-		if(isset($res->errcode)){
-			print_r($res);
-			return false;
-		}
 		//3 刷新access_token（如果需要）
 		if(!$this->isvaild($res->access_token, $res->openid)){
 			$url = "https://api.weixin.qq.com/sns/oauth2/refresh_token?appid={$this->appid}&grant_type=refresh_token&refresh_token={$res->refresh_token}";
 			$res = $this->http_curl($url,true);
-			if(isset($res->errcode)){
-				print_r($res);
-				return false;
-			}
 		}
 		//4 第四步：拉取用户信息(需scope为 snsapi_userinfo)
 		$url="https://api.weixin.qq.com/sns/userinfo?access_token={$res->access_token}&openid={$res->openid}&lang=zh_CN";
 		$res = $this->http_curl($url,true);
-		if(isset($res->errcode)){
-			print_r($res);
-			return false;
-		}
 //      print_r($res);
 		return $res;
 	}
@@ -234,9 +174,6 @@ class User extends Common{
 	function isvaild($access_token,$openid){
 		$url = "https://api.weixin.qq.com/sns/auth?access_token={$access_token}&openid={$openid}";
 		$res = $this->http_curl($url,true);
-		if($res->errcode){
-			return false;
-		}
 		return true;
 	}
 	

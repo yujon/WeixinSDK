@@ -28,10 +28,8 @@ class Material extends Common{
 		$arr = array("media"=>"@{$filePath}","form-data" => $fileInfo);
 		$data=json_encode($arr);
 		$res = $this->http_curl($url,true,true,$data);		   
-		if(!isset($res->errcode)){
 			return $res->media_id;
 		}
-	}
 	
 	//获取临时多媒体素材
 	function getTemMaterial($num,$media_id){
@@ -42,9 +40,7 @@ class Material extends Common{
 	   	    $url = "https://api.weixin.qq.com/cgi-bin/media/get?access_token={$access_token}&media_id={$media_id}";
 	   }	  
 	   $res = $this->http_curl($url,false);
-	   if(!isset($res->errcode)){
-	   	  file_put_contents("public/upload/{$media_id}.jpg",$res);
-	   }
+	   file_put_contents("public/upload/{$media_id}.jpg",$res);
 	}
 	
 	//上传永久多媒体素材
@@ -59,12 +55,8 @@ class Material extends Common{
 			$arr['description']["description"] = $description;
 		}
 		$data = json_encode($arr);
-		$res = $this->http_curl($url,true,true,$$data);
-		if(!isset($res->errcode)){
-			return $res->media_id;
-		}else{
-			print_r($res);
-		}
+		$res = $this->http_curl($url,true,true,$data);
+		return $res->media_id;
 	}
 	
     //上传永久图文素材
@@ -83,10 +75,7 @@ class Material extends Common{
 		}		
 		$data = urldecode(json_encode($articles));
 		$res = $this->http_curl($url,true,true,$data);
-		if(!isset($res->errcode)){
-			print_r($res);
-			return $res->media_id;
-		}
+		return $res->media_id;
 	}
 	
 	//修改永久图文消息
@@ -105,9 +94,7 @@ class Material extends Common{
 		}
 		$data = urldecode(json_encode($articles));
 		$res = $this->http_curl($url,true,true,$data);
-		if(isset($res->errcode)){ // 成功时$res->errcode为0
-			print_r($res);
-		}
+		return true;
 	}
 	
 	//获取永久多媒体素材
@@ -133,9 +120,6 @@ class Material extends Common{
 		$arr = array("media_id"=>$media_id);
 		$data = json_encode($arr);
 		$res = $this->http_curl($url,true,true,$data);
-		if(isset($res->errcode)){
-			print_r($res);
-		}
 		return true;
 	}
 	
@@ -144,10 +128,6 @@ class Material extends Common{
 		$access_token = $this->getAccessToken();
 		$url = "https://api.weixin.qq.com/cgi-bin/material/get_materialcount?access_token={$access_token}";
 		$res = $this->http_curl($url);
-		if($res){
-			print_r($res);
-			return ;
-		}
 		return $res;
 	}
 	
@@ -162,10 +142,6 @@ class Material extends Common{
 		);
 		$data = json_encode($arr);
 		$res = $this->http_curl($url,true,true,$data);
-		if(isset($res->errcode)){
-			print_r($res);
-			return ;
-		}
 		return $res;
 	}
 	

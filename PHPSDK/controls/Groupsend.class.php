@@ -43,10 +43,6 @@ class Groupsend extends Common{
 						$arr = array("media"=>"@{$filePath}","form-data" => $value['img']['imgInfo']);
 						$data = json_encode($arr);
 						$res = $this->http_curl($url,true,true,$data);
-						if(isset($res->errcode)){
-							print_r($res);
-							return false;
-						}
 					}
 					$articles['articles'][$key]['title'] = urlencode($value['article']['title']);    //标题
 					$articles['articles'][$key]['thumb_media_id'] = $res->url;  //封面图片id
@@ -59,10 +55,6 @@ class Groupsend extends Common{
 			}
 			$data = urldecode(json_encode($articles));
 			$res = $this->http_curl($url,true,true,$data);
-			if(isset($res->errcode)){
-				print_r($res);
-				return false;
-			}
 			$media_id = $res->media_id;
 			$arr = array(
 					"filter"=>array("is_to_all"=>$is_to_all),
@@ -90,10 +82,6 @@ class Groupsend extends Common{
 				);
 				$data = json_encode($arr);
 				$res = $this->http_curl($url,true,true,$data);
-				if(isset($res->errcode)){
-					print_r($res);
-					return false;
-				}
 				$media_id = $res->media_id;
 			}else{
 				$media_id = $material->addForMaterial($num,$fileInfo,$content['description']);
@@ -129,10 +117,6 @@ class Groupsend extends Common{
 		}
 		$data = json_encode($arr);
 		$res = $this->http_curl($url,true,true,$data);
-		if(isset($res->errcode)){
-			print_r($res);
-			return false;
-		}
 		return $res->msg_id;
 	}
 	
@@ -148,11 +132,7 @@ class Groupsend extends Common{
 		$arr = array("msg_id"=>$msg_id);
 		$data = json_encode($arr);
 		$res = $this->http_curl($url,true,true,$data);
-		if($res->errcode){
-			print_r($res);
-			return false;
-		}
-		return true;
+		return $res;
 	}
 	
 	//查询群发消息发送状态
@@ -162,11 +142,7 @@ class Groupsend extends Common{
 		$arr = array("msg_id"=>$msg_id);
 		$data = json_encode($arr);
 		$res = $this->http_curl($url,true,true,$data);
-		if(isset($res->errcode)){
-			print_r($res);
-			return false;
-		}
-		return true;
+		return $res;
 	}
 	
 }

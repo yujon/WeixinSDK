@@ -3,7 +3,7 @@
  * 单一入口
 *
 */
-	namespace WeixinSDK\API;
+	namespace WeixinSDK\PHPSDK;
 	//设置输出文本的编码
 	header("Content-Type:text/html;Charset=utf-8");
 	

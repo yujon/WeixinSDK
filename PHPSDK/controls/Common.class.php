@@ -43,15 +43,19 @@ class Common extends \Classes\Action{
 		$res = curl_exec($ch);
 // 		$httpHeader  = curl_getinfo($ch);
 
-		if( curl_errno($ch) ){
-			var_dump(curl_error($ch));
+		if( curl_errno($ch)){
+			$log = "[".curl_errno($ch)."]:".curl_error($ch);
+			log($log);  //写错误日志
 			return false;
 		}
+		
 		//4.关闭curl
 		curl_close( $ch );
 		if($json){
 			$res = json_decode($res);
-		}   
+		}  
+
+		
 		return $res;
 	}
 	

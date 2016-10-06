@@ -22,10 +22,6 @@ class Template extends Common{
 		$arr = array("industry_id1"=>$industry_1,"industry_id2"=>$industry_id2);
 		$data = json_encode($arr);
 		$res = $this->http_curl($url,true,true,$data);
-		if(isset($res->errcode)){
-			print_r($res);
-			return false;
-		}
 		return true;
 	}
 	
@@ -34,10 +30,6 @@ class Template extends Common{
 		$access_token = $this->getAccessToken();
 		$url = "https://api.weixin.qq.com/cgi-bin/template/get_industry?access_token={$access_token}";
 		$res = $this->http_curl($url,true);
-		if(isset($res->errcode)){
-			print_r($res);
-			return false;
-		}
 		return $res;
 	}
 	
@@ -48,10 +40,6 @@ class Template extends Common{
 		$arr = array("template_id_short"=>$tpl_id);
 		$data = json_encode($arr);
 		$res = $this->http_curl($url,true,true,$data);
-		if($res->errcode){
-			print_r($res);
-			return false;
-		}
 		return $res->template_id;
 	}
 	
@@ -60,10 +48,6 @@ class Template extends Common{
 		$access_token = $this->getAccessToken();
 		$url = "https://api.weixin.qq.com/cgi-bin/template/get_all_private_template?access_token={$access_token}";
 		$res = $this->http_curl($url,true);
-		if(isset($res->errcode)){
-			print_r($res);
-			return false;
-		}
 		return $res->template_list;
 	}
 	
@@ -74,10 +58,6 @@ class Template extends Common{
 		$arr = array("template_id"=>$tpl_id);
 		$data = json_encode($arr);
 		$res = $this->http_curl($url,true,true,$data);
-		if($res->errcode){
-			print_r($res);
-			return false;
-		}
 		return true;
 	}
 	
@@ -102,10 +82,6 @@ class Template extends Common{
 		);
 		$data = json_encode($arr);
 		$res = $this->http_curl($url,true,true,$data);
-		if($res->errcode){
-			print_r($res);
-			return false;
-		}
 		return $res;
 	}
 	

@@ -44,21 +44,21 @@ class Menu extends Common{
 		}
 		$data = urldecode(json_encode($menu));
 		$res = $this->http_curl($url,true,true,$data);
-		print_r($res);
+		return true;
 	}
 	
 	function get(){
 		$access_token = $this->getAccessToken();
 		$url = "https://api.weixin.qq.com/cgi-bin/menu/get?access_token={$access_token}";		
 		$res = $this->http_curl($url);
-		print_r($res);
+		return true;
 	}
 	
 	function delete(){
 		$access_token = $this->getAccessToken();
 		$url = "https://api.weixin.qq.com/cgi-bin/menu/delete?access_token={$access_token}";
 		$res = $this->http_curl($url);
-		print_r($res);
+		return true;
 	}
 	
 	

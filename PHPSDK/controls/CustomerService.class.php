@@ -26,11 +26,7 @@ class CustomerService extends Common{
 		);
 		$data = json_encode($arr);
 		$res = $this->http_curl($url,true,true,$data);
-		if($res->errcode){
-			print_r($res);
-			return false;
-		}
-		return true;
+		return $res;
 	}
 	
     //删除客服账号
@@ -44,11 +40,7 @@ class CustomerService extends Common{
 		);
 		$data = json_encode($arr);
 		$res = $this->http_curl($url,true,true,$data);
-		if($res->errcode){
-			print_r($res);
-			return false;
-		}
-		return true;
+		return $res;
 	}
 	
     //设置客服头像
@@ -59,11 +51,7 @@ class CustomerService extends Common{
 		$arr = array("media"=>"@{$filePath}","form-data" => $fileInfo);
 		$data = json_encode($arr);
 		$res = $this->http_curl($url,true,true,$data);		   
-		if($res->errcode){
-			print_r($res);
-			return false;
-		}
-		return true;
+		return $res;
 	}
 	
 	//获取所有客服账号
@@ -71,10 +59,6 @@ class CustomerService extends Common{
 		$access_token = $this->getAccessToken();
 		$url = "https://api.weixin.qq.com/customservice/kfaccount/getkflist?access_token={$access_token}";
 		$res = $this->http_curl($url,true);
-		if(isset($res->errcode)){
-			print_r($res);
-			return false;
-		}
 		return $res->kf_list;
 	}
 	
@@ -89,11 +73,7 @@ class CustomerService extends Common{
 		);
 		$data = json_encode($arr);
 		$res = $this->http_curl($url,true,true,$data);
-		if(isset($res->errcode)){
-			print_r($res);
-			return false;
-		}
-		return true;
+		return $res;
 	}
 	
 	//发送多媒体消息,image/voice/video
@@ -113,11 +93,7 @@ class CustomerService extends Common{
 		}
 		$data = json_encode($arr);
 		$res = $this->http_curl($url,true,true,$data);
-		if(isset($res->errcode)){
-			print_r($res);
-			return false;
-		}
-		return true;
+		return $res;
 	}
 	
 	//发送音乐消息
@@ -137,11 +113,7 @@ class CustomerService extends Common{
 		);
 		$data = json_encode($arr);
 		$res = $this->http_curl($url,true,true,$data);
-		if(isset($res->errcode)){
-			print_r($res);
-			return false;
-		}
-		return true;
+		return $res;
 	}
 	
 	//发送图文消息
@@ -173,11 +145,7 @@ class CustomerService extends Common{
 		}
 		$data = json_encode($arr);
 		$res = $this->http_curl($url,true,true,$data);
-		if(isset($res->errcode)){
-			print_r($res);
-			return false;
-		}
-		return true;
+		return $res;
 	}
 	
 	//发送卡券消息
@@ -194,10 +162,6 @@ class CustomerService extends Common{
 		);
 		$data = json_encode($arr);
 		$res = $this->http_curl($url,true,true,$data);
-		if(isset($res->errcode)){
-			print_r($res);
-			return false;
-		}
-		return true;
+		return $res;
 	}
 }
