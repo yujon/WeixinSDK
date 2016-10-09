@@ -29,11 +29,14 @@ function redirect($path, $args=""){
 
 
 /**
- * 写错误日志
+ * 写错误日志 ,触发trigger_error("A custom error has been triggered");
  */
-function log($log){
-	$log ="[".__FILE__."][".__LINE__."]:".$log;
+function myErrorHandler($errno, $errstr, $errfile, $errline){
+	$logstr ="Custom error:[{$errno}]{$errstr}\nError on line {$errline} in {$errfile}\n";
 	$fileName = date("y_m_d");
 	$logPath = $GLOBALS['root']."/log/".$fileName.".txt";
-	file_put_contents($logPath,$log, FILE_APPEND);
+	file_put_contents($logPath,$logstr, FILE_APPEND);
 }
+set_error_handler("myErrorHandler");
+
+

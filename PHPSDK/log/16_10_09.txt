@@ -1,0 +1,198 @@
+Custom error:[2]require_once(F:\server\wamp\www\github\Eclipse\WeixinSDK\PHPSDK/runtime/datas/jsapi_ticket.inc.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory
+Error on line 39 in F:\server\wamp\www\github\Eclipse\WeixinSDK\PHPSDK\classes\Configs.class.php
+Custom error:[8]Undefined variable: access_token
+Error on line 24 in F:\server\wamp\www\github\Eclipse\WeixinSDK\PHPSDK\controls\Jssdk.class.php
+Custom error:[8]Undefined property: stdClass::$ticket
+Error on line 27 in F:\server\wamp\www\github\Eclipse\WeixinSDK\PHPSDK\controls\Jssdk.class.php
+Custom error:[8]Undefined variable: jsapiTicket
+Error on line 52 in F:\server\wamp\www\github\Eclipse\WeixinSDK\PHPSDK\controls\Jssdk.class.php
+Custom error:[8]Use of undefined constant json - assumed 'json'
+Error on line 65 in F:\server\wamp\www\github\Eclipse\WeixinSDK\PHPSDK\controls\Jssdk.class.php
+Custom error:[8]Undefined variable: access_token
+Error on line 24 in F:\server\wamp\www\github\Eclipse\WeixinSDK\PHPSDK\controls\Jssdk.class.php
+Custom error:[8]Undefined property: stdClass::$ticket
+Error on line 27 in F:\server\wamp\www\github\Eclipse\WeixinSDK\PHPSDK\controls\Jssdk.class.php
+Custom error:[8]Undefined variable: jsapiTicket
+Error on line 52 in F:\server\wamp\www\github\Eclipse\WeixinSDK\PHPSDK\controls\Jssdk.class.php
+Custom error:[8]Use of undefined constant json - assumed 'json'
+Error on line 65 in F:\server\wamp\www\github\Eclipse\WeixinSDK\PHPSDK\controls\Jssdk.class.php
+Custom error:[8]Undefined variable: access_token
+Error on line 24 in F:\server\wamp\www\github\Eclipse\WeixinSDK\PHPSDK\controls\Jssdk.class.php
+Custom error:[8]Undefined property: stdClass::$ticket
+Error on line 27 in F:\server\wamp\www\github\Eclipse\WeixinSDK\PHPSDK\controls\Jssdk.class.php
+Custom error:[8]Use of undefined constant eixt - assumed 'eixt'
+Error on line 29 in F:\server\wamp\www\github\Eclipse\WeixinSDK\PHPSDK\controls\Jssdk.class.php
+Custom error:[8]Undefined variable: jsapiTicket
+Error on line 53 in F:\server\wamp\www\github\Eclipse\WeixinSDK\PHPSDK\controls\Jssdk.class.php
+Custom error:[8]Use of undefined constant json - assumed 'json'
+Error on line 66 in F:\server\wamp\www\github\Eclipse\WeixinSDK\PHPSDK\controls\Jssdk.class.php
+Custom error:[8]Undefined variable: access_token
+Error on line 24 in F:\server\wamp\www\github\Eclipse\WeixinSDK\PHPSDK\controls\Jssdk.class.php
+Custom error:[8]Undefined property: stdClass::$ticket
+Error on line 27 in F:\server\wamp\www\github\Eclipse\WeixinSDK\PHPSDK\controls\Jssdk.class.php
+Custom error:[8]Undefined variable: access_token
+Error on line 24 in F:\server\wamp\www\github\Eclipse\WeixinSDK\PHPSDK\controls\Jssdk.class.php
+Custom error:[8]Undefined property: stdClass::$ticket
+Error on line 28 in F:\server\wamp\www\github\Eclipse\WeixinSDK\PHPSDK\controls\Jssdk.class.php
+Custom error:[8]Undefined variable: access_token
+Error on line 24 in F:\server\wamp\www\github\Eclipse\WeixinSDK\PHPSDK\controls\Jssdk.class.php
+Custom error:[8]Undefined property: stdClass::$ticket
+Error on line 28 in F:\server\wamp\www\github\Eclipse\WeixinSDK\PHPSDK\controls\Jssdk.class.php
+Custom error:[8]Undefined variable: access_token
+Error on line 24 in F:\server\wamp\www\github\Eclipse\WeixinSDK\PHPSDK\controls\Jssdk.class.php
+Custom error:[8]Undefined property: stdClass::$ticket
+Error on line 28 in F:\server\wamp\www\github\Eclipse\WeixinSDK\PHPSDK\controls\Jssdk.class.php
+Custom error:[8]Undefined variable: jsapiTicket
+Error on line 51 in F:\server\wamp\www\github\Eclipse\WeixinSDK\PHPSDK\controls\Jssdk.class.php
+Custom error:[8]Use of undefined constant json - assumed 'json'
+Error on line 64 in F:\server\wamp\www\github\Eclipse\WeixinSDK\PHPSDK\controls\Jssdk.class.php
+Custom error:[8]Undefined variable: jsapiTicket
+Error on line 51 in F:\server\wamp\www\github\Eclipse\WeixinSDK\PHPSDK\controls\Jssdk.class.php
+Custom error:[8]Undefined variable: jsapiTicket
+Error on line 51 in F:\server\wamp\www\github\Eclipse\WeixinSDK\PHPSDK\controls\Jssdk.class.php
+Custom error:[8]Use of undefined constant json - assumed 'json'
+Error on line 63 in F:\server\wamp\www\github\Eclipse\WeixinSDK\PHPSDK\controls\Jssdk.class.php
+Custom error:[8]Undefined variable: jsapiTicket
+Error on line 51 in F:\server\wamp\www\github\Eclipse\WeixinSDK\PHPSDK\controls\Jssdk.class.php
+Custom error:[8]Use of undefined constant json - assumed 'json'
+Error on line 63 in F:\server\wamp\www\github\Eclipse\WeixinSDK\PHPSDK\controls\Jssdk.class.php
+Custom error:[8]Undefined variable: jsapiTicket
+Error on line 51 in F:\server\wamp\www\github\Eclipse\WeixinSDK\PHPSDK\controls\Jssdk.class.php
+Custom error:[8]Use of undefined constant json - assumed 'json'
+Error on line 63 in F:\server\wamp\www\github\Eclipse\WeixinSDK\PHPSDK\controls\Jssdk.class.php
+Custom error:[8]Undefined variable: jsapiTicket
+Error on line 51 in F:\server\wamp\www\github\Eclipse\WeixinSDK\PHPSDK\controls\Jssdk.class.php
+Custom error:[8]Use of undefined constant json - assumed 'json'
+Error on line 63 in F:\server\wamp\www\github\Eclipse\WeixinSDK\PHPSDK\controls\Jssdk.class.php
+Custom error:[8]Undefined variable: jsapiTicket
+Error on line 51 in F:\server\wamp\www\github\Eclipse\WeixinSDK\PHPSDK\controls\Jssdk.class.php
+Custom error:[8]Use of undefined constant json - assumed 'json'
+Error on line 63 in F:\server\wamp\www\github\Eclipse\WeixinSDK\PHPSDK\controls\Jssdk.class.php
+Custom error:[8]Undefined variable: jsapiTicket
+Error on line 51 in F:\server\wamp\www\github\Eclipse\WeixinSDK\PHPSDK\controls\Jssdk.class.php
+Custom error:[8]Use of undefined constant json - assumed 'json'
+Error on line 63 in F:\server\wamp\www\github\Eclipse\WeixinSDK\PHPSDK\controls\Jssdk.class.php
+Custom error:[8]Undefined variable: jsapiTicket
+Error on line 51 in F:\server\wamp\www\github\Eclipse\WeixinSDK\PHPSDK\controls\Jssdk.class.php
+Custom error:[8]Use of undefined constant json - assumed 'json'
+Error on line 63 in F:\server\wamp\www\github\Eclipse\WeixinSDK\PHPSDK\controls\Jssdk.class.php
+Custom error:[8]Undefined variable: jsapiTicket
+Error on line 51 in F:\server\wamp\www\github\Eclipse\WeixinSDK\PHPSDK\controls\Jssdk.class.php
+Custom error:[8]Undefined variable: jsapiTicket
+Error on line 51 in F:\server\wamp\www\github\Eclipse\WeixinSDK\PHPSDK\controls\Jssdk.class.php
+Custom error:[8]Undefined variable: jsapiTicket
+Error on line 51 in F:\server\wamp\www\github\Eclipse\WeixinSDK\PHPSDK\controls\Jssdk.class.php
+Custom error:[8]Undefined variable: jsapiTicket
+Error on line 51 in F:\server\wamp\www\github\Eclipse\WeixinSDK\PHPSDK\controls\Jssdk.class.php
+Custom error:[8]Undefined variable: jsapiTicket
+Error on line 51 in F:\server\wamp\www\github\Eclipse\WeixinSDK\PHPSDK\controls\Jssdk.class.php
+Custom error:[8]Undefined variable: jsapiTicket
+Error on line 51 in F:\server\wamp\www\github\Eclipse\WeixinSDK\PHPSDK\controls\Jssdk.class.php
+Custom error:[8]Undefined variable: jsapiTicket
+Error on line 51 in F:\server\wamp\www\github\Eclipse\WeixinSDK\PHPSDK\controls\Jssdk.class.php
+Custom error:[8]Undefined variable: jsapiTicket
+Error on line 51 in F:\server\wamp\www\github\Eclipse\WeixinSDK\PHPSDK\controls\Jssdk.class.php
+Custom error:[8]Undefined variable: jsapiTicket
+Error on line 51 in F:\server\wamp\www\github\Eclipse\WeixinSDK\PHPSDK\controls\Jssdk.class.php
+Custom error:[8]Undefined variable: jsapiTicket
+Error on line 51 in F:\server\wamp\www\github\Eclipse\WeixinSDK\PHPSDK\controls\Jssdk.class.php
+Custom error:[8]Undefined variable: jsapiTicket
+Error on line 51 in F:\server\wamp\www\github\Eclipse\WeixinSDK\PHPSDK\controls\Jssdk.class.php
+Custom error:[8]Undefined variable: jsapiTicket
+Error on line 51 in F:\server\wamp\www\github\Eclipse\WeixinSDK\PHPSDK\controls\Jssdk.class.php
+Custom error:[8]Undefined variable: jsapiTicket
+Error on line 51 in F:\server\wamp\www\github\Eclipse\WeixinSDK\PHPSDK\controls\Jssdk.class.php
+Custom error:[8]Undefined variable: jsapiTicket
+Error on line 51 in F:\server\wamp\www\github\Eclipse\WeixinSDK\PHPSDK\controls\Jssdk.class.php
+Custom error:[8]Undefined variable: jsapiTicket
+Error on line 51 in F:\server\wamp\www\github\Eclipse\WeixinSDK\PHPSDK\controls\Jssdk.class.php
+Custom error:[8]Undefined variable: jsapiTicket
+Error on line 51 in F:\server\wamp\www\github\Eclipse\WeixinSDK\PHPSDK\controls\Jssdk.class.php
+Custom error:[8]Undefined variable: jsapiTicket
+Error on line 51 in F:\server\wamp\www\github\Eclipse\WeixinSDK\PHPSDK\controls\Jssdk.class.php
+Custom error:[8]Undefined variable: jsapiTicket
+Error on line 51 in F:\server\wamp\www\github\Eclipse\WeixinSDK\PHPSDK\controls\Jssdk.class.php
+Custom error:[8]Undefined variable: jsapiTicket
+Error on line 51 in F:\server\wamp\www\github\Eclipse\WeixinSDK\PHPSDK\controls\Jssdk.class.php
+Custom error:[8]Undefined variable: jsapiTicket
+Error on line 51 in F:\server\wamp\www\github\Eclipse\WeixinSDK\PHPSDK\controls\Jssdk.class.php
+Custom error:[8]Undefined variable: jsapiTicket
+Error on line 51 in F:\server\wamp\www\github\Eclipse\WeixinSDK\PHPSDK\controls\Jssdk.class.php
+Custom error:[8]Undefined variable: jsapiTicket
+Error on line 51 in F:\server\wamp\www\github\Eclipse\WeixinSDK\PHPSDK\controls\Jssdk.class.php
+Custom error:[8]Undefined variable: jsapiTicket
+Error on line 51 in F:\server\wamp\www\github\Eclipse\WeixinSDK\PHPSDK\controls\Jssdk.class.php
+Custom error:[8]Undefined variable: jsapiTicket
+Error on line 51 in F:\server\wamp\www\github\Eclipse\WeixinSDK\PHPSDK\controls\Jssdk.class.php
+Custom error:[8]Undefined variable: jsapiTicket
+Error on line 51 in F:\server\wamp\www\github\Eclipse\WeixinSDK\PHPSDK\controls\Jssdk.class.php
+Custom error:[8]Undefined variable: jsapiTicket
+Error on line 51 in F:\server\wamp\www\github\Eclipse\WeixinSDK\PHPSDK\controls\Jssdk.class.php
+Custom error:[8]Undefined variable: jsapiTicket
+Error on line 51 in F:\server\wamp\www\github\Eclipse\WeixinSDK\PHPSDK\controls\Jssdk.class.php
+Custom error:[8]Undefined variable: jsapiTicket
+Error on line 51 in F:\server\wamp\www\github\Eclipse\WeixinSDK\PHPSDK\controls\Jssdk.class.php
+Custom error:[8]Undefined variable: jsapiTicket
+Error on line 51 in F:\server\wamp\www\github\Eclipse\WeixinSDK\PHPSDK\controls\Jssdk.class.php
+Custom error:[8]Undefined variable: jsapiTicket
+Error on line 51 in F:\server\wamp\www\github\Eclipse\WeixinSDK\PHPSDK\controls\Jssdk.class.php
+Custom error:[8]Undefined variable: jsapiTicket
+Error on line 51 in F:\server\wamp\www\github\Eclipse\WeixinSDK\PHPSDK\controls\Jssdk.class.php
+Custom error:[8]Undefined variable: jsapiTicket
+Error on line 51 in F:\server\wamp\www\github\Eclipse\WeixinSDK\PHPSDK\controls\Jssdk.class.php
+Custom error:[8]Undefined variable: jsapiTicket
+Error on line 51 in F:\server\wamp\www\github\Eclipse\WeixinSDK\PHPSDK\controls\Jssdk.class.php
+Custom error:[8]Undefined variable: jsapiTicket
+Error on line 51 in F:\server\wamp\www\github\Eclipse\WeixinSDK\PHPSDK\controls\Jssdk.class.php
+Custom error:[8]Undefined variable: jsapiTicket
+Error on line 51 in F:\server\wamp\www\github\Eclipse\WeixinSDK\PHPSDK\controls\Jssdk.class.php
+Custom error:[8]Undefined variable: jsapiTicket
+Error on line 51 in F:\server\wamp\www\github\Eclipse\WeixinSDK\PHPSDK\controls\Jssdk.class.php
+Custom error:[8]Undefined variable: jsapiTicket
+Error on line 51 in F:\server\wamp\www\github\Eclipse\WeixinSDK\PHPSDK\controls\Jssdk.class.php
+Custom error:[8]Undefined variable: jsapiTicket
+Error on line 51 in F:\server\wamp\www\github\Eclipse\WeixinSDK\PHPSDK\controls\Jssdk.class.php
+Custom error:[8]Undefined variable: jsapiTicket
+Error on line 51 in F:\server\wamp\www\github\Eclipse\WeixinSDK\PHPSDK\controls\Jssdk.class.php
+Custom error:[8]Undefined variable: jsapiTicket
+Error on line 51 in F:\server\wamp\www\github\Eclipse\WeixinSDK\PHPSDK\controls\Jssdk.class.php
+Custom error:[8]Undefined variable: jsapiTicket
+Error on line 51 in F:\server\wamp\www\github\Eclipse\WeixinSDK\PHPSDK\controls\Jssdk.class.php
+Custom error:[8]Undefined variable: jsapiTicket
+Error on line 51 in F:\server\wamp\www\github\Eclipse\WeixinSDK\PHPSDK\controls\Jssdk.class.php
+Custom error:[8]Undefined variable: jsapiTicket
+Error on line 51 in F:\server\wamp\www\github\Eclipse\WeixinSDK\PHPSDK\controls\Jssdk.class.php
+Custom error:[8]Undefined variable: jsapiTicket
+Error on line 51 in F:\server\wamp\www\github\Eclipse\WeixinSDK\PHPSDK\controls\Jssdk.class.php
+Custom error:[8]Undefined variable: jsapiTicket
+Error on line 51 in F:\server\wamp\www\github\Eclipse\WeixinSDK\PHPSDK\controls\Jssdk.class.php
+Custom error:[8]Undefined variable: jsapiTicket
+Error on line 51 in F:\server\wamp\www\github\Eclipse\WeixinSDK\PHPSDK\controls\Jssdk.class.php
+Custom error:[8]Undefined variable: jsapiTicket
+Error on line 51 in F:\server\wamp\www\github\Eclipse\WeixinSDK\PHPSDK\controls\Jssdk.class.php
+Custom error:[8]Undefined variable: jsapiTicket
+Error on line 51 in F:\server\wamp\www\github\Eclipse\WeixinSDK\PHPSDK\controls\Jssdk.class.php
+Custom error:[8]Undefined variable: jsapiTicket
+Error on line 51 in F:\server\wamp\www\github\Eclipse\WeixinSDK\PHPSDK\controls\Jssdk.class.php
+Custom error:[8]Undefined variable: jsapiTicket
+Error on line 51 in F:\server\wamp\www\github\Eclipse\WeixinSDK\PHPSDK\controls\Jssdk.class.php
+Custom error:[8]Undefined variable: jsapiTicket
+Error on line 51 in F:\server\wamp\www\github\Eclipse\WeixinSDK\PHPSDK\controls\Jssdk.class.php
+Custom error:[8]Undefined variable: jsapiTicket
+Error on line 51 in F:\server\wamp\www\github\Eclipse\WeixinSDK\PHPSDK\controls\Jssdk.class.php
+Custom error:[8]Undefined variable: jsapiTicket
+Error on line 51 in F:\server\wamp\www\github\Eclipse\WeixinSDK\PHPSDK\controls\Jssdk.class.php
+Custom error:[8]Undefined variable: jsapiTicket
+Error on line 51 in F:\server\wamp\www\github\Eclipse\WeixinSDK\PHPSDK\controls\Jssdk.class.php
+Custom error:[8]Undefined variable: jsapiTicket
+Error on line 51 in F:\server\wamp\www\github\Eclipse\WeixinSDK\PHPSDK\controls\Jssdk.class.php
+Custom error:[8]Undefined variable: jsapiTicket
+Error on line 51 in F:\server\wamp\www\github\Eclipse\WeixinSDK\PHPSDK\controls\Jssdk.class.php
+Custom error:[8]Undefined variable: jsapiTicket
+Error on line 51 in F:\server\wamp\www\github\Eclipse\WeixinSDK\PHPSDK\controls\Jssdk.class.php
+Custom error:[8]Undefined variable: jsapiTicket
+Error on line 51 in F:\server\wamp\www\github\Eclipse\WeixinSDK\PHPSDK\controls\Jssdk.class.php
+Custom error:[8]Undefined variable: jsapiTicket
+Error on line 51 in F:\server\wamp\www\github\Eclipse\WeixinSDK\PHPSDK\controls\Jssdk.class.php
+Custom error:[8]Undefined variable: jsapiTicket
+Error on line 51 in F:\server\wamp\www\github\Eclipse\WeixinSDK\PHPSDK\controls\Jssdk.class.php

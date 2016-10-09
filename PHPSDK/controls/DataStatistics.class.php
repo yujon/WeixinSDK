@@ -18,8 +18,8 @@ class DataStatistics extends Common{
 	//用户数据统计
 	function userSatistics($type,$begin_date,$end_date){
 		if($end_date - $begin_type > 7){
-			$log = "时间跨度超过限制";
-			log($log);
+			$content = "时间跨度超过限制";
+			trigger_error($content);
 			return false;
 		}
 		
@@ -28,8 +28,8 @@ class DataStatistics extends Common{
 		}elseif($type == 2){  //获取累计用户数据
 			$searchType = "getusercumulate";
 		}else{
-			$log = "用户统计类型选择错误，应该选择1或者2";
-			log($log);
+			$content = "用户统计类型选择错误，应该选择1或者2";
+			trigger_error($content);
 			return false;
 		}	
 		$access_token = $this->getAccessToken();
@@ -86,14 +86,14 @@ class DataStatistics extends Common{
 				$searchType = "getusershare";
 				break;
 			default: 
-				$log = "用户统计类型选择错误";
-				log($log);  
+				$content = "用户统计类型选择错误";
+				trigger_error($content);  
 				return false;
 		}
 		
 		if($overLimit){
-			$log = "日期跨度超过限制";
-			log($log);
+			$content = "日期跨度超过限制";
+			trigger_error($content);
 			return false;
 		}
 		
@@ -158,14 +158,14 @@ class DataStatistics extends Common{
 				$searchType = "getupstreammsgdistmonth";
 				break;
 			default:
-				$log = "消息统计类型选择错误";
-				log($log);
+				$content = "消息统计类型选择错误";
+				trigger_error($content);
 				return false;
 		}
 
 		if($overLimit){
-			$log = "日期跨度超过限制";
-			log($log);
+			$content = "日期跨度超过限制";
+			trigger_error($content);
 			return false;
 		}
 
@@ -180,13 +180,13 @@ class DataStatistics extends Common{
 	//接口调用数据统计，1获取用户增减数据，2获取累计用户数据
 	function interfacesSatistics($type,$begin_date,$end_date){
 	
-		if($type == 1 && ($end_date-$begin_date<=30){  //获取接口分析数据
+		if($type == 1 && ($end_date-$begin_date<=30)){  //获取接口分析数据
 			$searchType="getinterfacesummary";
 		}elseif($type == 2 && ($end_date-$begin_date<=1)){  ////获取接口分析时数据
 			$searchType = "getinterfacesummary";
 		}else{    
-			$log = "用户统计类型选择错误或者时间跨度超过限制";
-			log($log);
+			$content = "用户统计类型选择错误或者时间跨度超过限制";
+			trigger_error($content);
 			return false;
 		}
 		$access_token = $this->getAccessToken();

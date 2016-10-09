@@ -59,7 +59,7 @@
 // 	print_r($user->getUserList());
 
 	//群发管理
-	$response = \Controls\Response::getInstance();
+// 	$response = \Controls\Response::getInstance();
 //  $response->sendToAll(true,"text","这是一个群发文本",true,false,$openids);
     
 	

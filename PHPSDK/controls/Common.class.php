@@ -6,8 +6,6 @@ class Common extends \Classes\Action{
 	protected $token;
 	protected $appid;
 	protected $appsecret;
-	protected $starttime;
-	protected $access_token;	
 	
 	protected function __construct(){
 		$configs  = \Classes\Configs::getInstance();
@@ -15,7 +13,6 @@ class Common extends \Classes\Action{
 		$this->token = $temp['token'];
 		$this->appid = $temp['appid'];
 		$this->appsecret = $temp['appsecret'];
-		$this->refreshAccessToken();
 	}
 	
 	//初始化
@@ -44,8 +41,8 @@ class Common extends \Classes\Action{
 // 		$httpHeader  = curl_getinfo($ch);
 
 		if( curl_errno($ch)){
-			$log = "[".curl_errno($ch)."]:".curl_error($ch);
-			log($log);  //写错误日志
+			$logstr = "[".curl_errno($ch)."]:".curl_error($ch);
+			trigger_error($logstr);  //写错误日志
 			return false;
 		}
 		
@@ -59,23 +56,20 @@ class Common extends \Classes\Action{
 		return $res;
 	}
 	
-	//刷新access_token;
-	function refreshAccessToken(){
-		//1.请求url地址
-		$url = "https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=".$this->appid."&secret=".$this->appsecret;		
-		$arr = $this->http_curl($url);
-		$this->access_token = $arr->access_token;
-		$this->starttime = time();
-	}
-	
 	//获取Access_token值
 	function getAccessToken(){
-		$now = time();
-        if(isset($this->access_token)&& ($now - $this->starttime < 7200)){
-        	return $this->access_token;
-        }
-        $this->refreshAccessToken();
-		return $this->access_token;
+		$configs = \Classes\Configs::getInstance();
+		$arr = $configs->offsetGet("access_token","runtime/datas");
+		if(!isset($arr['expiretime']) || !isset($arr['access_token']) || (time()>$arr['expiretime'])){
+			//1.请求url地址
+			$url = "https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=".$this->appid."&secret=".$this->appsecret;
+			$res = $this->http_curl($url,true);
+			$arr['expiretime'] = time()+7200;
+			$arr['access_token'] = $res->access_token;
+			$configs->offsetSet("access_token", $arr,"runtime/datas");
+		}
+		$access_token = $arr['access_token'];
+		return $access_token;
 	}
 	
 	//获取微信服务器IP列表
